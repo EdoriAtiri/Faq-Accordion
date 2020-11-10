@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  position: relative;
+}
+
+p {
+  padding: 0;
+  margin: 5px;
+  color: hsl(240, 6%, 50%);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 55rem;
+  height: 27rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.background {
+  width: 700px;
+  height: 650px;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 20%;
+  top: -40%;
+}
+
+.womanDesktop {
+  height: 320px;
+  width: 400px;
+  position: absolute;
+  top: 9%;
+  right: 17%;
+}
+
+.womanMobile {
+  display: none;
+}
+
+.box {
+  position: absolute;
+  top: 35%;
+  right: 80.5%;
+  height: 180px;
+  width: 180px;
+}
+
+/* FAQ Section */
+.content {
+  width: 50%;
+  height: 100%;
+  padding-top: 50px;
+  text-align: start;
+  margin: 20px;
+}
+
+.content h1 {
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.question {
+  border-bottom: solid 1px hsl(240, 5%, 91%);
+  padding: 10px 0;
+}
+
+/* Activate Dropdown with JS */
+.dropdown {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 13px;
+  color: hsl(237, 12%, 33%);
+}
+
+.flip {
+  transform: scaleY(-1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 85vw;
+    height: 75vh;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .image {
+    width: 100%;
+    height: 20%;
+    /* position: relative; */
+    margin: auto;
+  }
+
+  .background {
+    display: none;
+  }
+  .womanMobile {
+    display: inline-block;
+    position: absolute;
+    bottom: 85%;
+    right: 12%;
+  }
+
+  .womanDesktop {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  /* FAQ Section */
+  .content {
+    width: 92%;
+    height: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .content h1 {
+    font-weight: 700;
+    margin: 10px 0 10px;
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    /* padding: 0 20px; */
+    margin: 10px;
+  }
+
+  .question {
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+    padding: 5px 20px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .womanMobile {
+    bottom: 80%;
+    right: 7%;
+  }
+  .content h1 {
+    margin: 5px 0 5px;
+  }
+  .summary {
+    margin: 5px;
+  }
+
+  .question {
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .womanMobile {
+    bottom: 81%;
+    right: 0%;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 500px) {
+  .womanMobile {
+    bottom: 75%;
+    right: 25%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 551px) {
+  /* FAQ Section */
+  .content {
+    width: 92%;
+    height: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: start;
+    margin: 10px;
+  }
+
+  .content h1 {
+    font-weight: 700;
+    margin: 10px 0 10px;
+    text-align: center;
+  }
+  .womanMobile {
+    bottom: 90%;
+    right: 30%;
+  }
+}
+
+/*
+@media screen and (min-width: 414px) and (max-width: 499px) {
+  .womanMobile {
+    bottom: 15%;
+    right: 13%;
+  }
+} */
